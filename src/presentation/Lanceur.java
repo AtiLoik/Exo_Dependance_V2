@@ -27,6 +27,8 @@ public class Lanceur {
 		ecole.afficherEtudiants(etudiantsInscrits);
 		
 		System.out.println(ecole.toString());
+		
+		etudiant1.faireLesDevoirs();
 	}
 
 }

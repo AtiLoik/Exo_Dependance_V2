@@ -1,6 +1,6 @@
 package metier;
 
-public class Etudiant extends Personne {
+public class Etudiant extends Personne implements Travail {
 	private String numEtudiant;
 	
 	// Constructeur
@@ -28,5 +28,11 @@ public class Etudiant extends Personne {
 	@Override
 	public String toString() {
 		return "Etudiant [numEtudiant=" + numEtudiant + ", prenom=" + prenom + ", nom=" + nom + "]";
+	}
+
+	@Override
+	public void faireLesDevoirs() {
+		System.out.println(prenom + " " + nom + " a fait ses devoirs.");
+		
 	}
 }
