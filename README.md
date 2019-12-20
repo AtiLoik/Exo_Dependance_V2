@@ -3,11 +3,11 @@
 Prérequis
 •	Une base de données MySQL Up-to-date.
 •	Une configuration MySQL comme suivante :
-o	Login : root
-o	Pass : <vide>
-o	Port : 3306
-o	Engine : InnoDB
-o	Accès RW en root
+  o	Login : root
+  o	Pass : <vide>
+  o	Port : 3306
+  o	Engine : InnoDB
+  o	Accès RW en root
 
 
 Installation
