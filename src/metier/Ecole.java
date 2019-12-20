@@ -1,6 +1,5 @@
 package metier;
 
-
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
@@ -62,12 +61,6 @@ public class Ecole {
 			st = cn.createStatement();
 			String sql = "Insert into Ecole values ("+nomEcole+", '"+ adresseEcole +"')";
 			st.executeUpdate(sql);
-			sql = "Select * from departement";
-			rs = st.executeQuery(sql);
-			while(rs.next()) {
-				String res = rs.getString("id")+ " " + rs.getString("nom") ;
-				System.out.println(res);
-			}
 		}
 		catch (SQLException e ) {
 			e.printStackTrace();
